@@ -4,6 +4,7 @@ import Categories from "./Categories";
 import Books from "./Books";
 
 const Store = () => {
+  console.log("HELLO");
   return (
     <div className="container-fluid">
       <div className="row">

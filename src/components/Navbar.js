@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,40 +21,44 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/">
                 Home <span className="sr-only">(current)</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/store">
                 Explore Store
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" href="/">
                 What we sell?
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link disabled"
                 href="/"
                 tabIndex="-1"
                 aria-disabled="true">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <button className="nav-link btn btn-outline-primary">
-                Login
-              </button>
+              <Link to="/login">
+                <button className="nav-link btn btn-outline-primary">
+                  Login
+                </button>
+              </Link>
             </li>
             <li className="nav-item">
-              <button className="nav-link btn btn-outline-primary">
-                Register
-              </button>
+              <Link to="/register">
+                <button className="nav-link btn btn-outline-primary">
+                  Register
+                </button>
+              </Link>
             </li>
           </ul>
         </div>
